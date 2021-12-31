@@ -2,6 +2,7 @@ let y = 0
 let x = 0
 joystickbit.initJoystickBit()
 radio.setGroup(1)
+basic.showIcon(IconNames.SmallHeart)
 basic.forever(function () {
     x = Math.map(joystickbit.getRockerValue(joystickbit.rockerType.X), 0, 1023, -100, 100)
     y = Math.map(joystickbit.getRockerValue(joystickbit.rockerType.Y), 0, 1023, -100, 100)
