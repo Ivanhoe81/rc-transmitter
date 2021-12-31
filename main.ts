@@ -14,7 +14,7 @@ basic.showIcon(IconNames.SmallHeart)
 ki = 0
 be = 1
 basic.forever(function () {
-    x = Math.map(Math.map(0, 0, 1023, 100, -100), 0, 1023, 100, -100)
+    x = Math.map(joystickbit.getRockerValue(joystickbit.rockerType.X), 0, 1023, 165, 245)
     y = Math.map(joystickbit.getRockerValue(joystickbit.rockerType.Y), 0, 1023, 100, -100)
     radio.sendValue("x", x)
     radio.sendValue("y", y)
